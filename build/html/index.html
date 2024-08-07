@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="shortcut icon"
+			href="../assets/images/logo/logo_tech_r_2.ico"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="../css/style.css" />
+		<title>Todo list</title>
+	</head>
+	<body>
+		<main class="container">
+			<header class="container__header header">
+				<h1 class="header__title">Todo list</h1>
+				<form action="#" class="header__form form">
+					<div class="form__wrapper">
+						<input
+							type="text"
+							id="taks"
+							class="form__taks"
+							aria-required="true"
+							aria-label="Enter your new taks"
+							required
+						/>
+						<label for="taks" class="form__label">Enter your new taks</label>
+					</div>
+					<button
+						class="form__add"
+						id="add"
+						aria-label="Button to add your taks"
+					>
+						<img
+							class="form__icon"
+							src="../assets/images/icons/add_icon.svg"
+							alt="Add taks"
+						/>
+					</button>
+				</form>
+			</header>
+
+			<!-- Content task  -->
+			<section class="container__tasks tasks">
+				<h2 class="subtitle">Seciton of your tasks</h2>
+				<ul class="tasks__list">
+					<li class="tasks__item">
+						<span class="tasks__titleTaks"> Titulo</span>
+						<div class="tasks__actions">
+							<button class="tasks__remove">
+								<img
+									src="../assets/images/icons/error_icon.svg"
+									alt="remove taks"
+								/>
+							</button>
+							<button class="tasks__update">
+								update btn
+								<!-- <img src="../assets/images/icons/" alt="remove taks" /> -->
+							</button>
+						</div>
+						<p class="tasks__date">00/00/00</p>
+					</li>
+					<!--  -->
+				</ul>
+			</section>
+
+			<button class="container__clear">Clear all tasks</button>
+		</main>
+
+		<!-- Filtro de busqueda -->
+
+		<aside class="search">
+			<button class="search__toggle">
+				<img
+					src="../assets/images/icons/up_arrow_icon.svg"
+					alt="open/close search tab"
+				/>
+			</button>
+			<!--  -->
+			<h2 class="search__title">Filtro de busqueda</h2>
+			<!--  -->
+			<form action="#" class="search__form form">
+				<div class="form__wrapper">
+					<input
+						type="text"
+						id="taks"
+						class="form__taks"
+						aria-required="true"
+						aria-label="Search your tasks"
+						required
+					/>
+					<label for="taks" class="form__label">Search your tasks</label>
+				</div>
+				<button
+					class="form__search"
+					id="search"
+					aria-label="Button to search your taks"
+				>
+					<!-- Agregar el incono de buscar y el de escribir... :( -->
+					<img src="../assets/images/icons/add_icon.svg" alt="Search tasks" />
+				</button>
+			</form>
+			<!--  -->
+		</aside>
+	</body>
+</html>
