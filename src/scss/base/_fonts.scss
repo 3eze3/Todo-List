@@ -1,0 +1,69 @@
+@use "../abstract/mixin" as mx;
+@use "../abstract/variables" as vr;
+
+@font-face {
+	font-family: "Roboto Bold";
+	src: local("Robo Bold"),
+		url("../assets/fonts/Roboto-Bold.woff2") format("woff2"),
+		url("../assets/fonts/Roboto-Bold.woff") format("woff"),
+		url("../assets/fonts/Roboto-Bold.ttf") format("truetype");
+	font-display: spaw;
+}
+
+@font-face {
+	font-family: "Roboto Regular";
+	src: local("Robo Regular"),
+		url("../assets/fonts/Roboto-Regular.woff2") format("woff2"),
+		url("../assets/fonts/Roboto-Regular.woff") format("woff"),
+		url("../assets/fonts/Roboto-Regular.ttf") format("truetype");
+	font-display: spaw;
+}
+
+@font-face {
+	font-family: "Roboto light";
+	src: local("Robo light"),
+		url("../assets/fonts/Roboto-Light.woff2") format("woff2"),
+		url("../assets/fonts/Roboto-Light.woff") format("woff"),
+		url("../assets/fonts/Roboto-Light.ttf") format("truetype");
+	font-display: spaw;
+}
+
+body {
+	min-height: 100dvh;
+	font-size: 100%;
+	font-family: "Roboto light";
+	hyphens: manual;
+	font-smooth: always;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+	font-size: "Roboto Bold";
+	font-size: vr.$lg;
+	color: vr.$black-smoth;
+}
+
+h2 {
+	font-size: "Roboto Regular";
+	font-size: vr.$rm;
+	color: vr.$gray;
+}
+
+p {
+	color: vr.$gray-light;
+	font-size: vr.$sm;
+	font-weight: 600;
+	text-shadow: 0.1rem 0.1rem 0.1rem #f5eeee72;
+}
+
+form,
+input,
+select,
+button,
+label {
+	font-family: inherit;
+	hyphens: manual;
+	background-color: transparent;
+	display: block;
+}
